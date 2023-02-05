@@ -1,0 +1,24 @@
+.select-song {
+    border-radius: 4px;
+    border: 2px dashed #c2c2c2;
+    padding: 30px 45px;
+    text-align: center;
+    user-select: none;
+
+    &.good-file {
+        border-color: green;
+    }
+
+    &.wrong-file {
+        border-color: red;
+    }
+
+    * {
+        pointer-events: none;
+    }
+    
+
+    img {
+        display: inline-block;
+    }
+}

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>mmmmmmmmslowed</title>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <meta property="og:type" content="website">
+        <meta property="og:url" content="https://maeeen.github.io/mmmmmmmmslowed/">
+        <meta property="og:title" content="mmmmmmmmslowed">
+        <meta property="og:description" content="A quick website to add effects to songs ;)">
+        <meta property="og:site_name" content="mmmmmmmmslowed">
+        <meta property="og:locale" content="en_US">
+
+        <script src="./bundled.js"></script>
+    </head>
+    <body>
+        <div class="main-container">
+            <header>
+                <h1>mmmmmmmmslowed</h1>
+            </header>
+            <div class="select-song">
+                <img src="./img/drop-file.svg" alt="drop-file-icon">
+                <p>Drop in your song file</p>
+                <form class="hidden">
+                    <input type="file" accept="audio/*" id="file-picker" name="file-picker">
+                </form>
+            </div>
+
+            <div class="effects hidden"></div>
+
+            <div class="audio-player">
+                <audio controls></audio>
+
+                <div class="audio-controls">
+                    <p class="current-time">00:00</p>
+                    <div class="progress-bar-container">
+                        <div class="progress-bar">
+                            <div class="completed-bar">
+                                <div class="circle"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="end-time">00:00</p>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
